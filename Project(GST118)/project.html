@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iyegbu Victor O. | Portfolio</title>
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Iyegbu Victor O.</div>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home-section">
+    <div class="home-content">
+      <div class="home-text">
+      <h1>Hello, I'm Iyegbu Victor O.</h1>
+      <p>I'm A Web Developer | Front-End Enthusiast</p>
+      <a href="#projects" class="cta-button">View Projects</a>
+      </div>
+      <div class="home-img">
+         <img src="victor.jpeg" alt="victor pic" >
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate web development student of Bells University with experience in HTML5, CSS3, and JavaScript. I enjoy building creative, functional and respnsive websites and aspire to grow into a professional front-end developer.
+    </p>
+    <p>
+      My interests include UI/UX design, responsive layout building, and JavaScript programming. I'm currently learning modern tools and frameworks to expand my skillset.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item">
+        <h3>Frontend</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3 (Flexbox & Grid)</li>
+          <li>JavaScript (DOM, Events, Functions)</li>
+        </ul>
+      </div>
+      <div class="skill-item">
+        <h3>Design Tools</h3>
+        <ul>
+          <li>Figma (basic)</li>
+          <li>Canva</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="filter-buttons">
+      <button data-filter="all">All</button>
+      <button data-filter="game">Games</button>
+      <button data-filter="utility">Utilities</button>
+    </div>
+
+    <div class="project-grid" id="project-list">
+      <!-- Example Project Card -->
+      <div class="project-card" data-category="game">
+        <img src="rooster.jpg" alt="Rock, paper, scissors Screenshot" style="width: 100px; height: 100px;"/>
+        <h3>Rock, Paper, Scissors Game</h3>
+        <p>The simple rock,paper,scissors we all know and play but in this you are competing against your computer. Using JavaScript to handle logic and DOM updates.</p>
+        <p><strong>Technologies:</strong> HTML, CSS, JS</p>
+        <p><strong>Role:</strong> Sole Developer</p>
+        <a href="rps-game.html" target="_blank">Play Now</a> |
+       <a href="https://github.com/yourusername/rock-paper-scissors" target="_blank">Code</a>
+      </div>
+      <!-- Add more project cards here -->
+       <div class="project-card" data-category="utility">
+        <img src="calc.png" alt="calculator" style="width: 100px; height: 100px;">
+        <h3>Simple Calculator App</h3>
+        <p>A basic calculator that supports addition, subtraction, multiplication, and division using JavaScript.</p>
+        <a href="calculator.html" target="_blank">Try Calculator</a>
+       </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-entry">
+      <h3>New Horizons ICT Resource Center Bells University</h3>
+      <p><strong>Role:</strong> Student</p>
+      <p><strong>Duration:</strong> Jan 2025 - Apr 2025</p>
+      <ul>
+        <li>Studied HTML, CSS, and JavaScript fundamentals</li>
+        <li>Completed structured web development training</li>
+        <li>Built responsive static and interactive websites</li>
+      </ul>
+      <br>
+
+      <h3>GIIT Computer Training School</h3>
+      <p><strong>Role:</strong>Student</p>
+      <p><strong>Duration:</strong>August 2022 - October 2022</p>
+      <ul>
+        <li>Studied HTML, CSS, and Figma fundamentals</li>
+        <li>Completed a well structured web development and software training</li>
+        <li>Built a respnsive and interactive website</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+      <p id="form-message"></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Iyegbu Victor O. | My Portfolio</p>
+    <p id="date-time"></p>
+    <a href="#home" class="back-to-top">Back to Top</a>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="project.js"></script>
+</body>
+</html>
